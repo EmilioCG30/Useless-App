@@ -54,6 +54,7 @@
 		DE1F69C729EFA47100BEE46F /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		DE1F69CB29EFA4E900BEE46F /* VisitedLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedLinks.swift; sourceTree = "<group>"; };
 		DE1F69CD29EFA50A00BEE46F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		DEE2DC4929F0594A00EB4ED8 /* Useless-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Useless-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		DE1F699729EFA31600BEE46F /* Useless App */ = {
 			isa = PBXGroup;
 			children = (
+				DEE2DC4929F0594A00EB4ED8 /* Useless-App-Info.plist */,
 				DE1F699829EFA31600BEE46F /* Useless_AppApp.swift */,
 				DE1F699A29EFA31600BEE46F /* ContentView.swift */,
 				DE1F699C29EFA31900BEE46F /* Assets.xcassets */,
@@ -459,6 +461,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Useless-App-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -498,6 +501,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Useless-App-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
