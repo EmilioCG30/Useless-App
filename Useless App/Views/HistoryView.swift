@@ -4,14 +4,18 @@ struct HistoryView: View {
     @EnvironmentObject var visitedLinks: VisitedLinks
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(visitedLinks.links, id: \.self) { link in
-                    Text(link)
-                }
+        List {
+            ForEach(visitedLinks.links, id: \.self) { link in
+                Text(link)
             }
-            .navigationTitle("View History")
+            .onDelete(perform: delete)
         }
+        .navigationBarTitle("History")
+    }
+    
+    func delete(at offsets: IndexSet) {
+        visitedLinks.links.remove(atOffsets: offsets)
+        UserDefaults.standard.set(visitedLinks.links, forKey: "visitedLinks")
     }
 }
 
