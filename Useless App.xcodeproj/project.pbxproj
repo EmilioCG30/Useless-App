@@ -14,6 +14,11 @@
 		DE1F69AB29EFA31A00BEE46F /* Useless_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F69AA29EFA31A00BEE46F /* Useless_AppTests.swift */; };
 		DE1F69B529EFA31A00BEE46F /* Useless_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F69B429EFA31A00BEE46F /* Useless_AppUITests.swift */; };
 		DE1F69B729EFA31A00BEE46F /* Useless_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F69B629EFA31A00BEE46F /* Useless_AppUITestsLaunchTests.swift */; };
+		DE1F69C529EFA3B800BEE46F /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F69C429EFA3B800BEE46F /* Links.swift */; };
+		DE1F69C829EFA47200BEE46F /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F69C729EFA47100BEE46F /* Welcome.swift */; };
+		DE1F69CC29EFA4E900BEE46F /* VisitedLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F69CB29EFA4E900BEE46F /* VisitedLinks.swift */; };
+		DE1F69CE29EFA50A00BEE46F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F69CD29EFA50A00BEE46F /* HistoryView.swift */; };
+		DECA2E2729EFABF4007ACF5D /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = DECA2E2629EFABF4007ACF5D /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,10 @@
 		DE1F69B029EFA31A00BEE46F /* Useless AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Useless AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1F69B429EFA31A00BEE46F /* Useless_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Useless_AppUITests.swift; sourceTree = "<group>"; };
 		DE1F69B629EFA31A00BEE46F /* Useless_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Useless_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE1F69C429EFA3B800BEE46F /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		DE1F69C729EFA47100BEE46F /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		DE1F69CB29EFA4E900BEE46F /* VisitedLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedLinks.swift; sourceTree = "<group>"; };
+		DE1F69CD29EFA50A00BEE46F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECA2E2729EFABF4007ACF5D /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +109,8 @@
 				DE1F699A29EFA31600BEE46F /* ContentView.swift */,
 				DE1F699C29EFA31900BEE46F /* Assets.xcassets */,
 				DE1F699E29EFA31900BEE46F /* Useless_App.entitlements */,
+				DE1F69C629EFA45700BEE46F /* Views */,
+				DE1F69C329EFA3A200BEE46F /* Classes */,
 				DE1F699F29EFA31900BEE46F /* Preview Content */,
 			);
 			path = "Useless App";
@@ -129,6 +141,24 @@
 			path = "Useless AppUITests";
 			sourceTree = "<group>";
 		};
+		DE1F69C329EFA3A200BEE46F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F69C429EFA3B800BEE46F /* Links.swift */,
+				DE1F69CB29EFA4E900BEE46F /* VisitedLinks.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DE1F69C629EFA45700BEE46F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F69C729EFA47100BEE46F /* Welcome.swift */,
+				DE1F69CD29EFA50A00BEE46F /* HistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +175,9 @@
 			dependencies = (
 			);
 			name = "Useless App";
+			packageProductDependencies = (
+				DECA2E2629EFABF4007ACF5D /* GoogleMobileAds */,
+			);
 			productName = "Useless App";
 			productReference = DE1F699529EFA31600BEE46F /* Useless App.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +250,9 @@
 				Base,
 			);
 			mainGroup = DE1F698C29EFA31600BEE46F;
+			packageReferences = (
+				DECA2E2529EFABF4007ACF5D /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = DE1F699629EFA31600BEE46F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1F69C829EFA47200BEE46F /* Welcome.swift in Sources */,
+				DE1F69CE29EFA50A00BEE46F /* HistoryView.swift in Sources */,
 				DE1F699B29EFA31600BEE46F /* ContentView.swift in Sources */,
+				DE1F69CC29EFA4E900BEE46F /* VisitedLinks.swift in Sources */,
+				DE1F69C529EFA3B800BEE46F /* Links.swift in Sources */,
 				DE1F699929EFA31600BEE46F /* Useless_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +459,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -427,12 +468,12 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ecg.Useless-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,6 +498,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -465,12 +507,12 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ecg.Useless-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -612,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DECA2E2529EFABF4007ACF5D /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DECA2E2629EFABF4007ACF5D /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DECA2E2529EFABF4007ACF5D /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE1F698D29EFA31600BEE46F /* Project object */;
 }
